@@ -37,6 +37,10 @@ spec:
   selector:
     app: grade-submission-api
   ports:
-  - port: 80
-    targetPort: 3000
-  type: ClusterIP
+    - port: 80
+      targetPort: 3000
+  type: LoadBalancer
+  # ports:
+  # - port: 80
+  #   targetPort: 3000
+  # type: ClusterIP
